@@ -492,56 +492,50 @@ public class Main {
 
         List<String> puntionMarks = new ArrayList<String>();
         for (int count = 0; count < linesArray.length; count++) {
-            switch (linesArray[count]) {
-                case ".":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case ",":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "?":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case ";":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "!":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case ":":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "'":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "(":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case ")":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "[":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "]":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "-":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "/":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "{":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "}":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-                case "*":
-                    puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
-                    break;
-
+            if (linesArray[count].contains(".")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains(",")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains("?")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains(";")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains(":")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains("!")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains("'")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains("(")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains(")")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains("[")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains("]")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains("{")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains("}")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains("/")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
+            }
+            if (linesArray[count].contains("*")) {
+                puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
             }
         }
         symbolTable.put("Punctuation Marks", puntionMarks);
