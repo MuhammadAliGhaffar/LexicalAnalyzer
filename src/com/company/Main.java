@@ -12,7 +12,6 @@ public class Main {
         Scanner reader = new Scanner(new File("input.txt"));
 
         ArrayList<String> lines = new ArrayList<>();
-        Map<String, List<String>> symbolTable = new HashMap<String, List<String>>();
 
         while (reader.hasNextLine()) {
             String str = reader.nextLine();
@@ -45,7 +44,6 @@ public class Main {
                     break;
             }
         }
-        symbolTable.put("Articles", articles);
 
         List<String> pronoun = new ArrayList<String>();
         for (int count = 0; count < linesArray.length; count++) {
@@ -415,7 +413,6 @@ public class Main {
                     break;
             }
         }
-        symbolTable.put("Pronoun", pronoun);
 
         List<String> helpingVerb = new ArrayList<String>();
         for (int count = 0; count < linesArray.length; count++) {
@@ -488,7 +485,6 @@ public class Main {
                     break;
             }
         }
-        symbolTable.put("Helping Verb", helpingVerb);
 
         List<String> puntionMarks = new ArrayList<String>();
         for (int count = 0; count < linesArray.length; count++) {
@@ -538,7 +534,6 @@ public class Main {
                 puntionMarks.add("<punctuation_marks," + linesArray[count] + ">");
             }
         }
-        symbolTable.put("Punctuation Marks", puntionMarks);
 
         System.out.print("The Lexemes: ");
         System.out.println(lines);
